@@ -1,6 +1,6 @@
 #include <iostream>
-
+#include "Dice.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Dice d;
     return 0;
 }
