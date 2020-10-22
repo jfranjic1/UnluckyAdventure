@@ -12,6 +12,10 @@ public:
     void kill();
     void move_relative(int, int);
     void move_absolute(int, int);
+
+    bool isAlive() const;
+
+    int getPosition() const;
 };
 
 

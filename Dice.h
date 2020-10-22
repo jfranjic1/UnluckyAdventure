@@ -9,6 +9,7 @@ public:
     Dice(int numb);
     Dice();
     int Roll();
+    int RollSilent();
 };
 
 

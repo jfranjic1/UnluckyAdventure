@@ -36,6 +36,14 @@ void Player::move_absolute(int new_pos, int max = 100) {
     this->position = new_pos;
 }
 
+int Player::getPosition() const {
+    return position;
+}
+
+bool Player::isAlive() const {
+    return alive;
+}
+
 
 
 

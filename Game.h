@@ -4,19 +4,19 @@
 #include <vector>
 #include "Player.h"
 #include "Field.h"
+#include "Dice.h"
 class Game {
 private:
     int num_of_players;
     std::vector<Player*> players;
-    int number_of_fields;
-    int dice_sides;
     std::vector<Field*> fields;
+    Dice dice;
 public:
     Game(int players, int numberOfFields, int diceSides);
 
     virtual ~Game();
 
-
+    void turn();
 };
 
 
