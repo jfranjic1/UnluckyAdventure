@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Dice.h">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Field.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Field.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/main.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>

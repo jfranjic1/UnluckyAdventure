@@ -1,6 +1,8 @@
 #include <iostream>
+#include <vector>
 #include "Dice.h"
+#include "Field.h"
 int main() {
-    Dice d;
+
     return 0;
 }

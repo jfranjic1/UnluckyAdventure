@@ -3,4 +3,4 @@ project(UnluckyAdventure)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(UnluckyAdventure main.cpp Dice.cpp Dice.h)
+add_executable(UnluckyAdventure main.cpp Dice.cpp Dice.h Field.cpp Field.h)

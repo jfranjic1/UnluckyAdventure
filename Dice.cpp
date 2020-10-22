@@ -16,5 +16,5 @@ int Dice::Roll() {
     std::uniform_real_distribution<double> dist(1.0, this->max_number + 0.999);
     int result = dist(mt);
     std::cout<<"The roll was "<<result<< std::endl;
-    return 1;
+    return result;
 }
