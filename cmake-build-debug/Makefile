@@ -127,6 +127,33 @@ UnluckyAdventure\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\build
 .PHONY : UnluckyAdventure\fast
 
+Dice.obj: Dice.cpp.obj
+
+.PHONY : Dice.obj
+
+# target to build an object file
+Dice.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj
+.PHONY : Dice.cpp.obj
+
+Dice.i: Dice.cpp.i
+
+.PHONY : Dice.i
+
+# target to preprocess a source file
+Dice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Dice.cpp.i
+.PHONY : Dice.cpp.i
+
+Dice.s: Dice.cpp.s
+
+.PHONY : Dice.s
+
+# target to generate assembly for a file
+Dice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Dice.cpp.s
+.PHONY : Dice.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -163,6 +190,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... UnluckyAdventure
+	@echo ... Dice.obj
+	@echo ... Dice.i
+	@echo ... Dice.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

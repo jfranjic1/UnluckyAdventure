@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Dice.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Dice.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/main.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
