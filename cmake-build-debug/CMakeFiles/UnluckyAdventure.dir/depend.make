@@ -4,6 +4,14 @@
 CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj: ..\Dice.cpp
 CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj: ..\Dice.h
 
+CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: ..\Field.cpp
+CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: ..\Field.h
+
+CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.cpp
+CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.h
+
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Dice.h
+CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Field.h
+CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Player.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\main.cpp
 

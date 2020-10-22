@@ -181,6 +181,60 @@ Field.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Field.cpp.s
 .PHONY : Field.cpp.s
 
+Game.obj: Game.cpp.obj
+
+.PHONY : Game.obj
+
+# target to build an object file
+Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj
+.PHONY : Game.cpp.obj
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Game.cpp.s
+.PHONY : Game.cpp.s
+
+Player.obj: Player.cpp.obj
+
+.PHONY : Player.obj
+
+# target to build an object file
+Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj
+.PHONY : Player.cpp.obj
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Player.cpp.s
+.PHONY : Player.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -223,6 +277,12 @@ help:
 	@echo ... Field.obj
 	@echo ... Field.i
 	@echo ... Field.s
+	@echo ... Game.obj
+	@echo ... Game.i
+	@echo ... Game.s
+	@echo ... Player.obj
+	@echo ... Player.i
+	@echo ... Player.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

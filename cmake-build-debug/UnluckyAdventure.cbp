@@ -94,6 +94,18 @@
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Field.h">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Game.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Game.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Player.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Player.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/main.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>

@@ -8,6 +8,8 @@
 Field::Field() {
     std::random_device rd;
     std::mt19937 mt(rd());
+
+    // 1 in 100, 1 in 30, 1 in 10....
     int black_hole_perc = 100;
     int wormhole_perc = 30;
     int forward_perc = 10;
