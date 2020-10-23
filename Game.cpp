@@ -106,3 +106,8 @@ void Game::turn() {
         }
     }
 }
+
+void Game::start() {
+    std::cout<<""<<std::endl;
+
+}

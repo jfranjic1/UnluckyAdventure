@@ -17,6 +17,9 @@ public:
     virtual ~Game();
 
     void turn();
+
+    void start();
+    
 };
 
 
