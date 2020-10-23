@@ -74,7 +74,6 @@ void Field::GenerateMonsters() {
     std::uniform_real_distribution<double> dist_monster(1, monsterperc + 0.99);
 
     if(this->isNormalField() && int(dist_monster(mt)) == 1){
-        std::cout<<"asa";
     this->monster = Monster();
     this->monster_field =true;
     this->normal_field=false;
@@ -87,4 +86,13 @@ bool Field::isMonsterField() const {
 
 const Monster &Field::getMonster() const {
     return monster;
+}
+
+void Field::NormalField() {
+    normal_field = true;
+    this->monster_field= false;
+    this->backward_field=false;
+    this->wormhole_field=false;
+    this->blackhole_field= false;
+    this->forward_field=false;
 }

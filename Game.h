@@ -21,6 +21,8 @@ public:
     void static start();
 
     void generateMonsters();
+
+    void monsterCombat(int i);
 };
 
 

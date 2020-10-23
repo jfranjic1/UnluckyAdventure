@@ -14,17 +14,21 @@ void Player::kill() {
 
 void Player::move_relative(int diff, int max=100) {
     if(this->position + diff < 0){
+        this->previous_position = this->position;
         this->position = 0;
         return;
     }
     if(this->position + diff > max){
+        this->previous_position = this->position;
         this->position = 100;
         return;
     }
+    this->previous_position = this->position;
     this->position = this->position + diff;
 }
 
 void Player::move_absolute(int new_pos, int max = 100) {
+    this->previous_position = this->position;
     if(new_pos < 0){
         this->position = 0;
         return;
@@ -42,6 +46,10 @@ int Player::getPosition() const {
 
 bool Player::isAlive() const {
     return alive;
+}
+
+int Player::getPreviousPosition() const {
+    return previous_position;
 }
 
 

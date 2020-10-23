@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Game.h"
 #include "Player.h"
+#include "random"
 
 Game::Game(int players, int numberOfFields, int diceSides) {
     this->num_of_players = players;
@@ -13,6 +14,7 @@ Game::Game(int players, int numberOfFields, int diceSides) {
     for(int i=0;i<numberOfFields;i++){
         this->fields[i] = new Field();
     }
+    this->fields[0]->NormalField();
 }
 
 Game::~Game() {
@@ -91,7 +93,8 @@ void Game::turn() {
         if(this->fields[this->players[i]->getPosition()]->isForwardField()){
             check = false;
             int result = this->dice.RollSilent();
-            std::cout<<"You have moved to a Forward field and have to move "<< result <<" fields forward."<<std::endl;
+            std::cout<<"You have moved to a Forward field at the position "<< this->players[i]->getPosition()<<" and have to move "<< result <<" fields forward1"
+                                                                                                                                               "1."<<std::endl;
             this->players[i]->move_relative(result, this->fields.size());
             i--;
             continue;
@@ -103,6 +106,9 @@ void Game::turn() {
             this->players[i]->move_relative(-result, this->fields.size());
             i--;
             continue;
+        }
+        if(this->fields[this->players[i]->getPosition()]->isMonsterField()){
+            this->monsterCombat(this->players[i]->getPosition());
         }
     }
 }
@@ -143,11 +149,7 @@ void Game::start() {
     } while (monst != 'y' && monst != 'Y' && monst != 'N' && monst != 'n');
     if (monst == 'y' || monst == 'Y')g.generateMonsters();
 
-    for (int i = 0; i < field; ++i) {
-        if(g.fields[i]->isMonsterField()){
-            std::cout<<i<<"  "<<g.fields[i]->getMonster().getTier()<<std::endl;
-        }
-    }
+
     while(1){
         try {
             g.turn();
@@ -159,7 +161,44 @@ void Game::start() {
 }
 
 void Game::generateMonsters() {
-    for (int i = 0; i < this->fields.size(); ++i) {
+    for (int i = 1; i < this->fields.size(); ++i) {
         this->fields[i]->GenerateMonsters();
+    }
+}
+
+void Game::monsterCombat(int i) {
+    std::random_device rd;
+    std::mt19937 mt(rd());
+    int run_survieve1 = 100;
+    int fight_survive1= 50;
+    int run_survieve2 = 50;
+    int fight_survive2= 25;
+    int run_survieve3 = 25;
+    float fight_survive3= 12.5;
+    float run_survieve4 = 12.5;
+    float fight_survive4= 6.25;
+
+    std::uniform_real_distribution<double> dist_monster_run1(1, run_survieve1 + 0.99);
+    std::uniform_real_distribution<double> dist_monster_fight1(1, fight_survive1 + 0.99);
+    std::uniform_real_distribution<double> dist_monster_run2(1, run_survieve2 + 0.99);
+    std::uniform_real_distribution<double> dist_monster_fight2(1, fight_survive2 + 0.99);
+    std::uniform_real_distribution<double> dist_monster_run3(1, run_survieve3 + 0.99);
+    std::uniform_real_distribution<double> dist_monster_fight3(1, fight_survive3 + 0.99);
+    std::uniform_real_distribution<double> dist_monster_run4(1, run_survieve4 + 0.99);
+    std::uniform_real_distribution<double> dist_monster_fight4(1, fight_survive4 + 0.99);
+
+    std::cout<<"You ran into a Level "<< this->fields[i]->getMonster().getTier()<<" monster."<<std::endl;
+    std::cout<<"Do you wish to fight the monster or run away from it ? (R - run, F - Fight)"<<std::endl;
+    char monst;
+    do {
+        std::cin >> monst;
+        if(monst != 'R' && monst != 'r' && monst != 'f' && monst != 'F')std::cout << "Please enter a valid character." << std::endl;
+        std::cin.clear();
+        std::cin.ignore();
+    } while (monst != 'R' && monst != 'r' && monst != 'F' && monst != 'f');
+    if (monst == 'r' || monst == 'R'){
+
+    } else{
+
     }
 }

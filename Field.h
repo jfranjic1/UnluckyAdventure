@@ -28,6 +28,8 @@ public:
 
     void GenerateMonsters();
 
+    void NormalField();
+
     const Monster &getMonster() const;
 };
 

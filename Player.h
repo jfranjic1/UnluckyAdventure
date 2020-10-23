@@ -6,7 +6,11 @@ class Player {
 private:
     bool alive = true;
     int position = 0;
+    int previous_position = 0;
     int number = 0;
+public:
+    int getPreviousPosition() const;
+
 public:
     Player(int);
     void kill();
