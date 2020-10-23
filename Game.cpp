@@ -112,6 +112,8 @@ void Game::start() {
     int num;
     do {
         std::cin >> num;
+        std::cin.clear();
+        std::cin.ignore();
         if(num < 1)std::cout << "Please enter a valid number of players." << std::endl;
     } while (num < 1);
     std::cout<<"How many fields do you wish to have ?"<<std::endl;
@@ -119,14 +121,33 @@ void Game::start() {
     do {
         std::cin >> field;
         if(field < 50)std::cout << "Please enter a valid number of fields. (>=50)" << std::endl;
+        std::cin.clear();
+        std::cin.ignore();
     } while (field < 50);
     int dice;
     do {
         std::cout<<"How many dice sides do you wish to have ?"<<std::endl;
         std::cin >> dice;
         if(dice < 6)std::cout << "Please enter a valid number of dice sides. (>=6)" << std::endl;
+        std::cin.clear();
+        std::cin.ignore();
     } while (dice < 6);
     Game g(num,field,dice);
+    char monst;
+    do {
+        std::cout<<"Do you wish to have monsters in your game ? (Y - Yes, N - No)"<<std::endl;
+        std::cin >> monst;
+        if(monst != 'y' && monst != 'Y' && monst != 'N' && monst != 'n')std::cout << "Please enter a valid character." << std::endl;
+        std::cin.clear();
+        std::cin.ignore();
+    } while (monst != 'y' && monst != 'Y' && monst != 'N' && monst != 'n');
+    if (monst == 'y' || monst == 'Y')g.generateMonsters();
+
+    for (int i = 0; i < field; ++i) {
+        if(g.fields[i]->isMonsterField()){
+            std::cout<<i<<"  "<<g.fields[i]->getMonster().getTier()<<std::endl;
+        }
+    }
     while(1){
         try {
             g.turn();
@@ -135,4 +156,10 @@ void Game::start() {
         }
     }
 
+}
+
+void Game::generateMonsters() {
+    for (int i = 0; i < this->fields.size(); ++i) {
+        this->fields[i]->GenerateMonsters();
+    }
 }

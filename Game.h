@@ -20,6 +20,7 @@ public:
 
     void static start();
 
+    void generateMonsters();
 };
 
 

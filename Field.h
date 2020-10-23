@@ -9,6 +9,7 @@ private:
     bool backward_field = false;
     bool wormhole_field = false;
     bool blackhole_field = false;
+    bool monster_field = false;
     Monster monster;
 public:
     Field();
@@ -17,11 +18,17 @@ public:
 
     bool isForwardField() const;
 
+    bool isMonsterField() const;
+
     bool isBackwardField() const;
 
     bool isWormholeField() const;
 
     bool isBlackholeField() const;
+
+    void GenerateMonsters();
+
+    const Monster &getMonster() const;
 };
 
 

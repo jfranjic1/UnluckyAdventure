@@ -66,3 +66,25 @@ bool Field::isWormholeField() const {
 bool Field::isBlackholeField() const {
     return blackhole_field;
 }
+
+void Field::GenerateMonsters() {
+    std::random_device rd;
+    std::mt19937 mt(rd());
+    int monsterperc = 10;
+    std::uniform_real_distribution<double> dist_monster(1, monsterperc + 0.99);
+
+    if(this->isNormalField() && int(dist_monster(mt)) == 1){
+        std::cout<<"asa";
+    this->monster = Monster();
+    this->monster_field =true;
+    this->normal_field=false;
+ }
+}
+
+bool Field::isMonsterField() const {
+    return monster_field;
+}
+
+const Monster &Field::getMonster() const {
+    return monster;
+}
