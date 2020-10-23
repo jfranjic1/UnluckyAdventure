@@ -1,7 +1,8 @@
 #include <iostream>
 #include "Game.h"
-#include "Player.h"
-#include "random"
+#include "RandomNumberGod.h"
+
+
 
 Game::Game(int players, int numberOfFields, int diceSides) {
     this->num_of_players = players;
@@ -171,10 +172,8 @@ void Game::generateMonsters() {
 }
 
 void Game::monsterCombat(int i, int j) {
-    std::random_device rd;
-    std::mt19937 mt(rd());
-    std::vector<float> run = {10, 7, 5, 3};
-    std::vector<float> fight = {7, 5, 3, 2};
+    std::vector<float> run = {70, 50, 30, 20};
+    std::vector<float> fight = {50, 25, 15, 7};
 
     int monster_tier = this->fields[i]->getMonster()->getTier();
     std::cout<<"You ran into a Level "<< monster_tier<<" monster."<<std::endl;
@@ -188,8 +187,8 @@ void Game::monsterCombat(int i, int j) {
     } while (monst != 'R' && monst != 'r' && monst != 'F' && monst != 'f');
 
     if (monst == 'r' || monst == 'R'){
-        std::uniform_real_distribution<double> dist_monster_run(1, run[monster_tier-1] + 0.99);
-        if(int(dist_monster_run(mt)) == 1){
+        RandomNumberGod run_rng(run[monster_tier-1]);
+        if(!run_rng.roll()){
             std::cout<<"A great tragedy happened while runing away from a Level "<<monster_tier<<" monster."<<std::endl;
             std::cout<<"You have been returned to the start."<<std::endl;
             this->players[j]->move_absolute(0,this->fields.size());
@@ -198,11 +197,11 @@ void Game::monsterCombat(int i, int j) {
             std::cout<<"You have returned to the previous position safely. (field "<<this->players[j]->getPosition()<<")"<<std::endl;
         }
     } else{
-        std::uniform_real_distribution<double> dist_monster_fight(1, fight[monster_tier-1] + 0.99);
-        if(int(dist_monster_fight(mt)) == 1){
+        RandomNumberGod fight_rng(fight[monster_tier-1]);
+        if(!fight_rng.roll()){
             std::cout<<"A great tragedy happened while trying to fight a Level "<<monster_tier<<" monster."<<std::endl;
-            std::uniform_real_distribution<double> split(1, 2+0.99);
-            if(int(split(mt)) ==1) {
+            RandomNumberGod coin_flip(50);
+            if(coin_flip.roll()) {
                 std::cout << "You have been returned to the start." << std::endl;
                 this->players[j]->move_absolute(0, this->fields.size());
             } else{

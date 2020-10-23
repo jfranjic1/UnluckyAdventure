@@ -8,4 +8,4 @@ bool RandomNumberGod::roll() {
     return dist_blackhole(mt)<percentage;
 }
 
-RandomNumberGod::RandomNumberGod(int percentage) : percentage(percentage) {}
+RandomNumberGod::RandomNumberGod(double percentage) : percentage(percentage) {}

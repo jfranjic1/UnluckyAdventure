@@ -1,42 +1,29 @@
 #include <iostream>
-#include <random>
 #include "Field.h"
+#include "RandomNumberGod.h"
 
 Field::Field() {
-    std::random_device rd;
-    std::mt19937 mt(rd());
+    RandomNumberGod black_hole_perc(1);
+    RandomNumberGod wormhole_perc(5);
+    RandomNumberGod forward_perc(10);
+    RandomNumberGod backward_perc(10);
 
-    // 1 in 100, 1 in 30, 1 in 10....
-    int black_hole_perc = 100;
-    int wormhole_perc = 30;
-    int forward_perc = 10;
-    int backward_perc = 7;
-
-    std::uniform_real_distribution<double> dist_blackhole(1, black_hole_perc + 0.99);
-    std::uniform_real_distribution<double> dist_wormhole(1, wormhole_perc + 0.99);
-    std::uniform_real_distribution<double> dist_forward(1, forward_perc + 0.99);
-    std::uniform_real_distribution<double> dist_backward(1, backward_perc + 0.99);
-
-    int temp = dist_blackhole(mt);
-    if(temp==1){
+    if(black_hole_perc.roll()){
         this->blackhole_field=true;
         return;
     }
 
-    temp = dist_wormhole(mt);
-    if(temp==1){
+    if(wormhole_perc.roll()){
         this->wormhole_field=true;
         return;
     }
 
-    temp = dist_forward(mt);
-    if(temp==1){
+    if(forward_perc.roll()){
         this->forward_field=true;
         return;
     }
 
-    temp = dist_backward(mt);
-    if(temp==1){
+    if(backward_perc.roll()){
         this->backward_field=true;
         return;
     }
@@ -65,11 +52,9 @@ bool Field::isBlackholeField() const {
 }
 
 void Field::GenerateMonsters() {
-    std::random_device rd;
-    std::mt19937 mt(rd());
-    int monsterperc = 5;
-    std::uniform_real_distribution<double> dist_monster(1, monsterperc + 0.99);
-    if(this->isNormalField() && int(dist_monster(mt)) == 1){
+    int monsterperc = 20;
+    RandomNumberGod rng(monsterperc);
+    if(this->isNormalField() && rng.roll()){
     this->monster = new Monster();
     this->monster_field =true;
     this->normal_field=false;

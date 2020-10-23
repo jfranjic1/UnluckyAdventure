@@ -4,9 +4,9 @@
 
 class RandomNumberGod {
 private:
-    int percentage;
+    double percentage;
 public:
-    RandomNumberGod(int percentage);
+    RandomNumberGod(double percentage);
     bool roll();
 };
 

@@ -7,6 +7,7 @@ CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj: ..\Dice.h
 CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: ..\Field.cpp
 CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: ..\Field.h
 CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: ..\Monster.h
+CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: ..\RandomNumberGod.h
 
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Dice.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Field.h
@@ -14,17 +15,23 @@ CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Game.cpp
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Game.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Monster.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Player.h
+CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\RandomNumberGod.h
 
 CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\Monster.cpp
 CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\Monster.h
+CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\RandomNumberGod.h
 
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.cpp
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.h
+
+CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.obj: ..\RandomNumberGod.cpp
+CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.obj: ..\RandomNumberGod.h
 
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Dice.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Field.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Game.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Monster.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Player.h
+CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\RandomNumberGod.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\main.cpp
 
