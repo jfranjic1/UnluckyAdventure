@@ -5,7 +5,7 @@
 Field::Field() {
     RandomNumberGod black_hole_perc(1);
     RandomNumberGod wormhole_perc(5);
-    RandomNumberGod forward_perc(10);
+    RandomNumberGod forward_perc(9);
     RandomNumberGod backward_perc(10);
 
     if(black_hole_perc.roll()){

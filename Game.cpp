@@ -2,8 +2,6 @@
 #include "Game.h"
 #include "RandomNumberGod.h"
 
-
-
 Game::Game(int players, int numberOfFields, int diceSides) {
     this->num_of_players = players;
     this->players = std::vector<Player*>(players);
@@ -154,6 +152,21 @@ void Game::start() {
     } while (monst != 'y' && monst != 'Y' && monst != 'N' && monst != 'n');
     if (monst == 'y' || monst == 'Y')g.generateMonsters();
 
+    /*
+        int monster = 0, black = 0, worm = 0, forward = 0, backward = 0;
+        for (int i = 0; i < 100000; ++i) {
+            if (g.fields[i]->isMonsterField())monster++;
+            if (g.fields[i]->isBackwardField())backward++;
+            if (g.fields[i]->isForwardField())forward++;
+            if (g.fields[i]->isWormholeField())worm++;
+            if (g.fields[i]->isBlackholeField())black++;
+        }
+        std::cout << "Monster " << monster << std::endl;
+        std::cout << "Backward " << backward << std::endl;
+        std::cout << "Forward " << forward << std::endl;
+        std::cout << "Worm " << worm << std::endl;
+        std::cout << "Black " << black << std::endl;
+    */
 
     while(1){
         try {
