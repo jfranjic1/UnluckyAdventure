@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\DT User6\CLionProjects\UnluckyAdventure"
+CMAKE_SOURCE_DIR = "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles\UnluckyAdventure.dir\depend.make
@@ -63,97 +63,116 @@ include CMakeFiles\UnluckyAdventure.dir\flags.make
 
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: CMakeFiles\UnluckyAdventure.dir\flags.make
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/UnluckyAdventure.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/UnluckyAdventure.dir/main.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\main.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\main.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\main.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\main.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnluckyAdventure.dir/main.cpp.i"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\UnluckyAdventure.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventure\main.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\main.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnluckyAdventure.dir/main.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\main.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\main.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\main.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\main.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj: CMakeFiles\UnluckyAdventure.dir\flags.make
 CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj: ..\Dice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/UnluckyAdventure.dir/Dice.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/UnluckyAdventure.dir/Dice.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Dice.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Dice.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Dice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnluckyAdventure.dir/Dice.cpp.i"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\UnluckyAdventure.dir\Dice.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Dice.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Dice.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Dice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnluckyAdventure.dir/Dice.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\Dice.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Dice.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\Dice.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Dice.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: CMakeFiles\UnluckyAdventure.dir\flags.make
 CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: ..\Field.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/UnluckyAdventure.dir/Field.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/UnluckyAdventure.dir/Field.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\Field.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Field.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\Field.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Field.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Field.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnluckyAdventure.dir/Field.cpp.i"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\UnluckyAdventure.dir\Field.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Field.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Field.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Field.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnluckyAdventure.dir/Field.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\Field.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Field.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\Field.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Field.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: CMakeFiles\UnluckyAdventure.dir\flags.make
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/UnluckyAdventure.dir/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/UnluckyAdventure.dir/Player.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\Player.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Player.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\Player.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Player.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnluckyAdventure.dir/Player.cpp.i"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\UnluckyAdventure.dir\Player.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Player.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Player.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnluckyAdventure.dir/Player.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\Player.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Player.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\Player.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Player.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: CMakeFiles\UnluckyAdventure.dir\flags.make
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/UnluckyAdventure.dir/Game.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/UnluckyAdventure.dir/Game.cpp.obj"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\Game.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Game.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\Game.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Game.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnluckyAdventure.dir/Game.cpp.i"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\UnluckyAdventure.dir\Game.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Game.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Game.cpp"
 <<
 
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnluckyAdventure.dir/Game.cpp.s"
 	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\Game.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventure\Game.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\Game.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Game.cpp"
+<<
+
+CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: CMakeFiles\UnluckyAdventure.dir\flags.make
+CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\Monster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/UnluckyAdventure.dir/Monster.cpp.obj"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj /FdCMakeFiles\UnluckyAdventure.dir\ /FS -c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Monster.cpp"
+<<
+
+CMakeFiles\UnluckyAdventure.dir\Monster.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnluckyAdventure.dir/Monster.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\UnluckyAdventure.dir\Monster.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Monster.cpp"
+<<
+
+CMakeFiles\UnluckyAdventure.dir\Monster.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnluckyAdventure.dir/Monster.cpp.s"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\UnluckyAdventure.dir\Monster.cpp.s /c "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\Monster.cpp"
 <<
 
 # Object files for target UnluckyAdventure
@@ -162,7 +181,8 @@ UnluckyAdventure_OBJECTS = \
 "CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj" \
 "CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj" \
 "CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj" \
-"CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj"
+"CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj" \
+"CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj"
 
 # External object files for target UnluckyAdventure
 UnluckyAdventure_EXTERNAL_OBJECTS =
@@ -172,11 +192,12 @@ UnluckyAdventure.exe: CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj
 UnluckyAdventure.exe: CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj
 UnluckyAdventure.exe: CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj
 UnluckyAdventure.exe: CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj
+UnluckyAdventure.exe: CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj
 UnluckyAdventure.exe: CMakeFiles\UnluckyAdventure.dir\build.make
 UnluckyAdventure.exe: CMakeFiles\UnluckyAdventure.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable UnluckyAdventure.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable UnluckyAdventure.exe"
 	"C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\UnluckyAdventure.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\UnluckyAdventure.dir\objects1.rsp @<<
- /out:UnluckyAdventure.exe /implib:UnluckyAdventure.lib /pdb:"C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\UnluckyAdventure.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:UnluckyAdventure.exe /implib:UnluckyAdventure.lib /pdb:"C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\UnluckyAdventure.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -189,6 +210,6 @@ CMakeFiles\UnluckyAdventure.dir\clean:
 .PHONY : CMakeFiles\UnluckyAdventure.dir\clean
 
 CMakeFiles\UnluckyAdventure.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" "C:\Users\DT User6\CLionProjects\UnluckyAdventure" "C:\Users\DT User6\CLionProjects\UnluckyAdventure" "C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug" "C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug" "C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles\UnluckyAdventure.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters" "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters" "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug" "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug" "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles\UnluckyAdventure.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles\UnluckyAdventure.dir\depend
 

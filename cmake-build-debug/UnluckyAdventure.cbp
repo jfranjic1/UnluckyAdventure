@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventure/cmake-build-debug"/>
+				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="UnluckyAdventure">
-				<Option output="C:/Users/DT User6/CLionProjects/UnluckyAdventure/cmake-build-debug/UnluckyAdventure.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventure/cmake-build-debug"/>
+				<Option output="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug/UnluckyAdventure.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -33,15 +33,15 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 UnluckyAdventure"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 UnluckyAdventure"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="UnluckyAdventure/fast">
-				<Option output="C:/Users/DT User6/CLionProjects/UnluckyAdventure/cmake-build-debug/UnluckyAdventure.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventure/cmake-build-debug"/>
+				<Option output="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug/UnluckyAdventure.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -55,61 +55,67 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 UnluckyAdventure/fast"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 UnluckyAdventure/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventure/cmake-build-debug"/>
+				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventure/cmake-build-debug"/>
+				<Option working_dir="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Dice.cpp">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Dice.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Dice.h">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Dice.h">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Field.cpp">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Field.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Field.h">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Field.h">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Game.cpp">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Game.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Game.h">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Game.h">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Player.cpp">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Monster.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/Player.h">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Monster.h">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/main.cpp">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Player.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
-		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventure/CMakeLists.txt">
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Player.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/main.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

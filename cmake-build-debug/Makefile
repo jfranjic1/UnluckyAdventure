@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\DT User6\CLionProjects\UnluckyAdventure"
+CMAKE_SOURCE_DIR = "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,9 +84,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles" "C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles" "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\DT User6\CLionProjects\UnluckyAdventure\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\DT User6\CLionProjects\UnluckyAdventureMonsters\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -208,6 +208,33 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Game.cpp.s
 .PHONY : Game.cpp.s
 
+Monster.obj: Monster.cpp.obj
+
+.PHONY : Monster.obj
+
+# target to build an object file
+Monster.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj
+.PHONY : Monster.cpp.obj
+
+Monster.i: Monster.cpp.i
+
+.PHONY : Monster.i
+
+# target to preprocess a source file
+Monster.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Monster.cpp.i
+.PHONY : Monster.cpp.i
+
+Monster.s: Monster.cpp.s
+
+.PHONY : Monster.s
+
+# target to generate assembly for a file
+Monster.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Monster.cpp.s
+.PHONY : Monster.cpp.s
+
 Player.obj: Player.cpp.obj
 
 .PHONY : Player.obj
@@ -280,6 +307,9 @@ help:
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
+	@echo ... Monster.obj
+	@echo ... Monster.i
+	@echo ... Monster.s
 	@echo ... Player.obj
 	@echo ... Player.i
 	@echo ... Player.s
