@@ -5,7 +5,14 @@
 class Monster {
 private:
     int tier;
+    bool alive = true;
+public:
+    void kill();
+    Monster();
 
+    int getTier() const;
+
+    bool isAlive() const;
 };
 
 

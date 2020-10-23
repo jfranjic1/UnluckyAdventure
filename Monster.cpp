@@ -1,5 +1,17 @@
-//
-// Created by DT User6 on 10/23/2020.
-//
-
 #include "Monster.h"
+
+void Monster::kill() {
+    this->alive = false;
+}
+
+Monster::Monster(){
+
+}
+
+int Monster::getTier() const {
+    return tier;
+}
+
+bool Monster::isAlive() const {
+    return alive;
+}
