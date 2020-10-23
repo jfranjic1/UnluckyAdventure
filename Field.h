@@ -1,6 +1,6 @@
 #ifndef UNLUCKYADVENTURE_FIELD_H
 #define UNLUCKYADVENTURE_FIELD_H
-
+#include "Monster.h"
 
 class Field {
 private:
@@ -9,6 +9,7 @@ private:
     bool backward_field = false;
     bool wormhole_field = false;
     bool blackhole_field = false;
+    Monster monster;
 public:
     Field();
 

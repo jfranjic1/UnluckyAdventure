@@ -39,7 +39,7 @@ void Game::turn() {
             }
         }
         if(!test_alive){
-            std::cout<<std::endl<<"All players are dead. GAME OVER."<<std::endl;
+            std::cout<<std::endl<<"All players are dead. GG UNLUCKY"<<std::endl;
             throw 1;
             return;
         }
@@ -131,7 +131,6 @@ void Game::start() {
         try {
             g.turn();
         } catch (...) {
-            std::cout<<"GAME OVER!"<<std::endl;
             break;
         }
     }
