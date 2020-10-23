@@ -262,6 +262,33 @@ Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Player.cpp.s
 .PHONY : Player.cpp.s
 
+RandomNumberGod.obj: RandomNumberGod.cpp.obj
+
+.PHONY : RandomNumberGod.obj
+
+# target to build an object file
+RandomNumberGod.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.obj
+.PHONY : RandomNumberGod.cpp.obj
+
+RandomNumberGod.i: RandomNumberGod.cpp.i
+
+.PHONY : RandomNumberGod.i
+
+# target to preprocess a source file
+RandomNumberGod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.i
+.PHONY : RandomNumberGod.cpp.i
+
+RandomNumberGod.s: RandomNumberGod.cpp.s
+
+.PHONY : RandomNumberGod.s
+
+# target to generate assembly for a file
+RandomNumberGod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.s
+.PHONY : RandomNumberGod.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -313,6 +340,9 @@ help:
 	@echo ... Player.obj
 	@echo ... Player.i
 	@echo ... Player.s
+	@echo ... RandomNumberGod.obj
+	@echo ... RandomNumberGod.i
+	@echo ... RandomNumberGod.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

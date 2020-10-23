@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/UnluckyAdventure.dir/Game.cpp.obj"
   "CMakeFiles/UnluckyAdventure.dir/Monster.cpp.obj"
   "CMakeFiles/UnluckyAdventure.dir/Player.cpp.obj"
+  "CMakeFiles/UnluckyAdventure.dir/RandomNumberGod.cpp.obj"
   "CMakeFiles/UnluckyAdventure.dir/main.cpp.obj"
   "UnluckyAdventure.exe"
   "UnluckyAdventure.exe.manifest"

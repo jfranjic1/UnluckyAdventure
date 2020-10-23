@@ -5,7 +5,7 @@
 #include "Player.h"
 #include "Game.h"
 #include "Monster.h"
-
+#include "RandomNumberGod.h"
 int main() {
     Game::start();
     return 0;

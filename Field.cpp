@@ -1,6 +1,3 @@
-//
-// Created by DT User6 on 10/22/2020.
-//
 #include <iostream>
 #include <random>
 #include "Field.h"
@@ -72,7 +69,6 @@ void Field::GenerateMonsters() {
     std::mt19937 mt(rd());
     int monsterperc = 5;
     std::uniform_real_distribution<double> dist_monster(1, monsterperc + 0.99);
-
     if(this->isNormalField() && int(dist_monster(mt)) == 1){
     this->monster = new Monster();
     this->monster_field =true;

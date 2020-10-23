@@ -112,6 +112,12 @@
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Player.h">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/RandomNumberGod.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/RandomNumberGod.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/main.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
