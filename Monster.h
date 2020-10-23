@@ -13,6 +13,8 @@ public:
     int getTier() const;
 
     bool isAlive() const;
+
+    void setAlive(bool alive);
 };
 
 

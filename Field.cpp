@@ -70,11 +70,11 @@ bool Field::isBlackholeField() const {
 void Field::GenerateMonsters() {
     std::random_device rd;
     std::mt19937 mt(rd());
-    int monsterperc = 10;
+    int monsterperc = 5;
     std::uniform_real_distribution<double> dist_monster(1, monsterperc + 0.99);
 
     if(this->isNormalField() && int(dist_monster(mt)) == 1){
-    this->monster = Monster();
+    this->monster = new Monster();
     this->monster_field =true;
     this->normal_field=false;
  }
@@ -84,9 +84,6 @@ bool Field::isMonsterField() const {
     return monster_field;
 }
 
-const Monster &Field::getMonster() const {
-    return monster;
-}
 
 void Field::NormalField() {
     normal_field = true;
@@ -95,4 +92,8 @@ void Field::NormalField() {
     this->wormhole_field=false;
     this->blackhole_field= false;
     this->forward_field=false;
+}
+
+Monster *Field::getMonster() const {
+    return monster;
 }

@@ -22,7 +22,7 @@ public:
 
     void generateMonsters();
 
-    void monsterCombat(int i);
+    void monsterCombat(int,int);
 };
 
 

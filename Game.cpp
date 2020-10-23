@@ -24,6 +24,11 @@ Game::~Game() {
     for (int i = 0; i < this->fields.size() ; i++) {
         delete this->fields[i];
     }
+    for (int i = 1; i < this->fields.size(); ++i) {
+        if (this->fields[i]->isMonsterField()){
+            delete fields[i]->getMonster();
+        }
+    }
 }
 
 void Game::turn() {
@@ -93,8 +98,7 @@ void Game::turn() {
         if(this->fields[this->players[i]->getPosition()]->isForwardField()){
             check = false;
             int result = this->dice.RollSilent();
-            std::cout<<"You have moved to a Forward field at the position "<< this->players[i]->getPosition()<<" and have to move "<< result <<" fields forward1"
-                                                                                                                                               "1."<<std::endl;
+            std::cout<<"You have moved to a Forward field at the position "<< this->players[i]->getPosition()<<" and have to move "<< result <<" fields forward"<<std::endl;
             this->players[i]->move_relative(result, this->fields.size());
             i--;
             continue;
@@ -107,8 +111,8 @@ void Game::turn() {
             i--;
             continue;
         }
-        if(this->fields[this->players[i]->getPosition()]->isMonsterField()){
-            this->monsterCombat(this->players[i]->getPosition());
+        if(this->fields[this->players[i]->getPosition()]->isMonsterField() && this->fields[this->players[i]->getPosition()]->getMonster()->isAlive()){
+            this->monsterCombat(this->players[i]->getPosition(),i);
         }
     }
 }
@@ -166,28 +170,14 @@ void Game::generateMonsters() {
     }
 }
 
-void Game::monsterCombat(int i) {
+void Game::monsterCombat(int i, int j) {
     std::random_device rd;
     std::mt19937 mt(rd());
-    int run_survieve1 = 100;
-    int fight_survive1= 50;
-    int run_survieve2 = 50;
-    int fight_survive2= 25;
-    int run_survieve3 = 25;
-    float fight_survive3= 12.5;
-    float run_survieve4 = 12.5;
-    float fight_survive4= 6.25;
+    std::vector<float> run = {10, 7, 5, 3};
+    std::vector<float> fight = {7, 5, 3, 2};
 
-    std::uniform_real_distribution<double> dist_monster_run1(1, run_survieve1 + 0.99);
-    std::uniform_real_distribution<double> dist_monster_fight1(1, fight_survive1 + 0.99);
-    std::uniform_real_distribution<double> dist_monster_run2(1, run_survieve2 + 0.99);
-    std::uniform_real_distribution<double> dist_monster_fight2(1, fight_survive2 + 0.99);
-    std::uniform_real_distribution<double> dist_monster_run3(1, run_survieve3 + 0.99);
-    std::uniform_real_distribution<double> dist_monster_fight3(1, fight_survive3 + 0.99);
-    std::uniform_real_distribution<double> dist_monster_run4(1, run_survieve4 + 0.99);
-    std::uniform_real_distribution<double> dist_monster_fight4(1, fight_survive4 + 0.99);
-
-    std::cout<<"You ran into a Level "<< this->fields[i]->getMonster().getTier()<<" monster."<<std::endl;
+    int monster_tier = this->fields[i]->getMonster()->getTier();
+    std::cout<<"You ran into a Level "<< monster_tier<<" monster."<<std::endl;
     std::cout<<"Do you wish to fight the monster or run away from it ? (R - run, F - Fight)"<<std::endl;
     char monst;
     do {
@@ -196,9 +186,33 @@ void Game::monsterCombat(int i) {
         std::cin.clear();
         std::cin.ignore();
     } while (monst != 'R' && monst != 'r' && monst != 'F' && monst != 'f');
+
     if (monst == 'r' || monst == 'R'){
-
+        std::uniform_real_distribution<double> dist_monster_run(1, run[monster_tier-1] + 0.99);
+        if(int(dist_monster_run(mt)) == 1){
+            std::cout<<"A great tragedy happened while runing away from a Level "<<monster_tier<<" monster."<<std::endl;
+            std::cout<<"You have been returned to the start."<<std::endl;
+            this->players[j]->move_absolute(0,this->fields.size());
+        }else{
+            this->players[j]->move_absolute(this->players[j]->getPreviousPosition(),this->fields.size());
+            std::cout<<"You have returned to the previous position safely. (field "<<this->players[j]->getPosition()<<")"<<std::endl;
+        }
     } else{
-
+        std::uniform_real_distribution<double> dist_monster_fight(1, fight[monster_tier-1] + 0.99);
+        if(int(dist_monster_fight(mt)) == 1){
+            std::cout<<"A great tragedy happened while trying to fight a Level "<<monster_tier<<" monster."<<std::endl;
+            std::uniform_real_distribution<double> split(1, 2+0.99);
+            if(int(split(mt)) ==1) {
+                std::cout << "You have been returned to the start." << std::endl;
+                this->players[j]->move_absolute(0, this->fields.size());
+            } else{
+                this->players[j]->move_absolute(this->players[j]->getPreviousPosition(), this->fields.size());
+                std::cout << "The Gods of Death were amazed by your bravery and you were returned to the previous field. (field "<<this->players[j]->getPosition()<<")" << std::endl;
+            }
+        }else{
+            this->players[j]->move_absolute(this->players[j]->getPreviousPosition(),this->fields.size());
+            std::cout<<"You have slain the a Level "<<monster_tier<<" monster."<<std::endl;
+            this->fields[i]->getMonster()->kill();
+        }
     }
 }

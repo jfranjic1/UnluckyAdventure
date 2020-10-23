@@ -33,6 +33,10 @@ int Monster::getTier() const {
     return tier;
 }
 
+void Monster::setAlive(bool alive) {
+    Monster::alive = alive;
+}
+
 bool Monster::isAlive() const {
     return alive;
 }

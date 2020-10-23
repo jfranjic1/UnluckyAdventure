@@ -10,7 +10,7 @@ private:
     bool wormhole_field = false;
     bool blackhole_field = false;
     bool monster_field = false;
-    Monster monster;
+    Monster *monster;
 public:
     Field();
 
@@ -30,7 +30,7 @@ public:
 
     void NormalField();
 
-    const Monster &getMonster() const;
+    Monster *getMonster() const;
 };
 
 
