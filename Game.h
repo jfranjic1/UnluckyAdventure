@@ -18,8 +18,8 @@ public:
 
     void turn();
 
-    void start();
-    
+    void static start();
+
 };
 
 

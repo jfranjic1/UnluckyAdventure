@@ -40,12 +40,12 @@ void Game::turn() {
         }
         if(!test_alive){
             std::cout<<std::endl<<"All players are dead. GAME OVER."<<std::endl;
-            exit(1);
+            throw 1;
             return;
         }
         if(test_end){
             std::cout<<"Player "<<j+1<<" has won the game."<<std::endl;
-            exit(1);
+            throw 1;
             return;
         }
 
@@ -108,6 +108,32 @@ void Game::turn() {
 }
 
 void Game::start() {
-    std::cout<<""<<std::endl;
+    std::cout<<"What is the number of great adventurers ?"<<std::endl;
+    int num;
+    do {
+        std::cin >> num;
+        if(num < 1)std::cout << "Please enter a valid number of players." << std::endl;
+    } while (num < 1);
+    std::cout<<"How many fields do you wish to have ?"<<std::endl;
+    int field;
+    do {
+        std::cin >> field;
+        if(field < 50)std::cout << "Please enter a valid number of fields. (>=50)" << std::endl;
+    } while (field < 50);
+    int dice;
+    do {
+        std::cout<<"How many dice sides do you wish to have ?"<<std::endl;
+        std::cin >> dice;
+        if(dice < 6)std::cout << "Please enter a valid number of dice sides. (>=6)" << std::endl;
+    } while (dice < 6);
+    Game g(num,field,dice);
+    while(1){
+        try {
+            g.turn();
+        } catch (...) {
+            std::cout<<"GAME OVER!"<<std::endl;
+            break;
+        }
+    }
 
 }

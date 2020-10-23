@@ -4,10 +4,9 @@
 #include "Field.h"
 #include "Player.h"
 #include "Game.h"
+#include "Monster.h"
+
 int main() {
-    Game g(1,100,6);
-    while(1){
-        g.turn();
-    }
+    Game::start();
     return 0;
 }
