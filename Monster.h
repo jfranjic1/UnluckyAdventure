@@ -3,6 +3,8 @@
 
 
 class Monster {
+private:
+    int tier;
 
 };
 
