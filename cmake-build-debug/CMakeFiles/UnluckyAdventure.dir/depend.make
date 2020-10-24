@@ -3,6 +3,7 @@
 
 CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj: ..\Dice.cpp
 CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj: ..\Dice.h
+CMakeFiles\UnluckyAdventure.dir\Dice.cpp.obj: ..\RandomNumberGod.h
 
 CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: ..\Field.cpp
 CMakeFiles\UnluckyAdventure.dir\Field.cpp.obj: ..\Field.h

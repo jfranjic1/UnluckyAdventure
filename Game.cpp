@@ -145,7 +145,7 @@ void Game::start() {
         if(dice < 6)std::cout << "Please enter a valid number of dice sides. (>=6)" << std::endl;
         std::cin.clear();
         std::cin.ignore();
-    } while (dice < 1);
+    } while (dice < 6);
     Game g(num,field,dice);
     char monst;
     do {
