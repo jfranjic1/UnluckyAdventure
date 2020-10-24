@@ -23,6 +23,10 @@ public:
     void generateMonsters();
 
     void monsterCombat(int,int);
+
+    int fieldHasPlayer(int position);
+
+    void PvP(int p1, int p2);
 };
 
 

@@ -113,6 +113,11 @@ void Game::turn() {
         if(this->fields[this->players[i]->getPosition()]->isMonsterField() && this->fields[this->players[i]->getPosition()]->getMonster()->isAlive()){
             this->monsterCombat(this->players[i]->getPosition(),i);
         }
+        if(this->fieldHasPlayer(this->players[i]->getPosition())>-1 && this->fieldHasPlayer(this->players[i]->getPosition()) != i && this->players[i]->getPosition()!=0){
+            std::cout<<"You have moved to position "<<this->players[i]->getPosition()<<" and ran into Player "<<this->fieldHasPlayer(this->players[i]->getPosition())+1<<"."<<std::endl;
+            this->PvP(i, this->fieldHasPlayer(this->players[i]->getPosition()));
+        }
+
     }
 }
 
@@ -140,7 +145,7 @@ void Game::start() {
         if(dice < 6)std::cout << "Please enter a valid number of dice sides. (>=6)" << std::endl;
         std::cin.clear();
         std::cin.ignore();
-    } while (dice < 6);
+    } while (dice < 1);
     Game g(num,field,dice);
     char monst;
     do {
@@ -225,6 +230,27 @@ void Game::monsterCombat(int i, int j) {
             this->players[j]->move_absolute(this->players[j]->getPreviousPosition(),this->fields.size());
             std::cout<<"You have slain the a Level "<<monster_tier<<" monster."<<std::endl;
             this->fields[i]->getMonster()->kill();
+            this->fields[i]->NormalField();
         }
+    }
+}
+
+int Game::fieldHasPlayer(int position) {
+    int i;
+    for ( i= 0; i < this->players.size(); ++i) {
+        if(this->players[i]->getPosition() == position && this->players[i]->isAlive())break;
+    }
+    if(i==this->players.size())return -1;
+    return i;
+}
+
+void Game::PvP(int p1, int p2) {
+    RandomNumberGod rng(50);
+    if(rng.roll()){
+        std::cout<<"In a fearsome battle Player "<< p1+1<< " has eliminated Player "<< p2+1 <<" out of the game."<<std::endl;
+        this->players[p2]->kill();
+    }else{
+        std::cout<<"In a fearsome battle Player "<< p2+1<< " has eliminated Player "<< p1+1 <<" out of the game."<<std::endl;
+        this->players[p1]->kill();
     }
 }

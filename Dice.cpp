@@ -1,28 +1,23 @@
 #include "Dice.h"
 #include <cstdlib>
 #include <iostream>
-#include <random>
+#include "RandomNumberGod.h"
 Dice::Dice(int numb) {
     if(numb>20)numb=20;
-    if(numb<2)numb=2;
+    if(numb<1)numb=1;
     this->max_number=numb;
 }
 Dice::Dice(){
     this->max_number=6;
 }
 int Dice::Roll() {
-    std::random_device rd;
-    std::mt19937 mt(rd());
-    std::uniform_real_distribution<double> dist(1.0, this->max_number + 0.999);
-    int result = dist(mt);
+    int result= this->RollSilent();
     std::cout<<"The roll was "<<result<< std::endl;
     return result;
 }
 
 int Dice::RollSilent() {
-    std::random_device rd;
-    std::mt19937 mt(rd());
-    std::uniform_real_distribution<double> dist(1.0, this->max_number + 0.999);
-    int result = dist(mt);
+    RandomNumberGod rng;
+    int result = rng.number_int(1, this->max_number);
     return result;
 }

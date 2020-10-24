@@ -78,3 +78,6 @@ void Field::NormalField() {
 Monster *Field::getMonster() const {
     return monster;
 }
+
+
+

@@ -10,7 +10,7 @@ private:
     bool wormhole_field = false;
     bool blackhole_field = false;
     bool monster_field = false;
-    Monster *monster;
+    Monster *monster= nullptr;
 public:
     Field();
 
