@@ -208,6 +208,87 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Game.cpp.s
 .PHONY : Game.cpp.s
 
+GuardianAngel.obj: GuardianAngel.cpp.obj
+
+.PHONY : GuardianAngel.obj
+
+# target to build an object file
+GuardianAngel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\GuardianAngel.cpp.obj
+.PHONY : GuardianAngel.cpp.obj
+
+GuardianAngel.i: GuardianAngel.cpp.i
+
+.PHONY : GuardianAngel.i
+
+# target to preprocess a source file
+GuardianAngel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\GuardianAngel.cpp.i
+.PHONY : GuardianAngel.cpp.i
+
+GuardianAngel.s: GuardianAngel.cpp.s
+
+.PHONY : GuardianAngel.s
+
+# target to generate assembly for a file
+GuardianAngel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\GuardianAngel.cpp.s
+.PHONY : GuardianAngel.cpp.s
+
+Item.obj: Item.cpp.obj
+
+.PHONY : Item.obj
+
+# target to build an object file
+Item.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Item.cpp.obj
+.PHONY : Item.cpp.obj
+
+Item.i: Item.cpp.i
+
+.PHONY : Item.i
+
+# target to preprocess a source file
+Item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Item.cpp.i
+.PHONY : Item.cpp.i
+
+Item.s: Item.cpp.s
+
+.PHONY : Item.s
+
+# target to generate assembly for a file
+Item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Item.cpp.s
+.PHONY : Item.cpp.s
+
+LuckyBoots.obj: LuckyBoots.cpp.obj
+
+.PHONY : LuckyBoots.obj
+
+# target to build an object file
+LuckyBoots.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\LuckyBoots.cpp.obj
+.PHONY : LuckyBoots.cpp.obj
+
+LuckyBoots.i: LuckyBoots.cpp.i
+
+.PHONY : LuckyBoots.i
+
+# target to preprocess a source file
+LuckyBoots.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\LuckyBoots.cpp.i
+.PHONY : LuckyBoots.cpp.i
+
+LuckyBoots.s: LuckyBoots.cpp.s
+
+.PHONY : LuckyBoots.s
+
+# target to generate assembly for a file
+LuckyBoots.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\LuckyBoots.cpp.s
+.PHONY : LuckyBoots.cpp.s
+
 Monster.obj: Monster.cpp.obj
 
 .PHONY : Monster.obj
@@ -289,6 +370,87 @@ RandomNumberGod.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.s
 .PHONY : RandomNumberGod.cpp.s
 
+Shield.obj: Shield.cpp.obj
+
+.PHONY : Shield.obj
+
+# target to build an object file
+Shield.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Shield.cpp.obj
+.PHONY : Shield.cpp.obj
+
+Shield.i: Shield.cpp.i
+
+.PHONY : Shield.i
+
+# target to preprocess a source file
+Shield.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Shield.cpp.i
+.PHONY : Shield.cpp.i
+
+Shield.s: Shield.cpp.s
+
+.PHONY : Shield.s
+
+# target to generate assembly for a file
+Shield.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Shield.cpp.s
+.PHONY : Shield.cpp.s
+
+Shop.obj: Shop.cpp.obj
+
+.PHONY : Shop.obj
+
+# target to build an object file
+Shop.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj
+.PHONY : Shop.cpp.obj
+
+Shop.i: Shop.cpp.i
+
+.PHONY : Shop.i
+
+# target to preprocess a source file
+Shop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Shop.cpp.i
+.PHONY : Shop.cpp.i
+
+Shop.s: Shop.cpp.s
+
+.PHONY : Shop.s
+
+# target to generate assembly for a file
+Shop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Shop.cpp.s
+.PHONY : Shop.cpp.s
+
+Sword.obj: Sword.cpp.obj
+
+.PHONY : Sword.obj
+
+# target to build an object file
+Sword.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Sword.cpp.obj
+.PHONY : Sword.cpp.obj
+
+Sword.i: Sword.cpp.i
+
+.PHONY : Sword.i
+
+# target to preprocess a source file
+Sword.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Sword.cpp.i
+.PHONY : Sword.cpp.i
+
+Sword.s: Sword.cpp.s
+
+.PHONY : Sword.s
+
+# target to generate assembly for a file
+Sword.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\Sword.cpp.s
+.PHONY : Sword.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -361,6 +523,15 @@ help:
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
+	@echo ... GuardianAngel.obj
+	@echo ... GuardianAngel.i
+	@echo ... GuardianAngel.s
+	@echo ... Item.obj
+	@echo ... Item.i
+	@echo ... Item.s
+	@echo ... LuckyBoots.obj
+	@echo ... LuckyBoots.i
+	@echo ... LuckyBoots.s
 	@echo ... Monster.obj
 	@echo ... Monster.i
 	@echo ... Monster.s
@@ -370,6 +541,15 @@ help:
 	@echo ... RandomNumberGod.obj
 	@echo ... RandomNumberGod.i
 	@echo ... RandomNumberGod.s
+	@echo ... Shield.obj
+	@echo ... Shield.i
+	@echo ... Shield.s
+	@echo ... Shop.obj
+	@echo ... Shop.i
+	@echo ... Shop.s
+	@echo ... Sword.obj
+	@echo ... Sword.i
+	@echo ... Sword.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -18,6 +18,17 @@ CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Monster.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Player.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\RandomNumberGod.h
 
+CMakeFiles\UnluckyAdventure.dir\GuardianAngel.cpp.obj: ..\GuardianAngel.cpp
+CMakeFiles\UnluckyAdventure.dir\GuardianAngel.cpp.obj: ..\GuardianAngel.h
+CMakeFiles\UnluckyAdventure.dir\GuardianAngel.cpp.obj: ..\Item.h
+
+CMakeFiles\UnluckyAdventure.dir\Item.cpp.obj: ..\Item.cpp
+CMakeFiles\UnluckyAdventure.dir\Item.cpp.obj: ..\Item.h
+
+CMakeFiles\UnluckyAdventure.dir\LuckyBoots.cpp.obj: ..\Item.h
+CMakeFiles\UnluckyAdventure.dir\LuckyBoots.cpp.obj: ..\LuckyBoots.cpp
+CMakeFiles\UnluckyAdventure.dir\LuckyBoots.cpp.obj: ..\LuckyBoots.h
+
 CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\Monster.cpp
 CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\Monster.h
 CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\RandomNumberGod.h
@@ -28,11 +39,20 @@ CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.h
 CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.obj: ..\RandomNumberGod.cpp
 CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.obj: ..\RandomNumberGod.h
 
+CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\Shop.cpp
+CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\Shop.h
+
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Dice.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Field.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Game.h
+CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\GuardianAngel.h
+CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Item.h
+CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\LuckyBoots.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Monster.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Player.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\RandomNumberGod.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\main.cpp
+
+CMakeFiles\UnluckyAdventure.dir\todo.cpp.obj: ..\todo.cpp
+CMakeFiles\UnluckyAdventure.dir\todo.cpp.obj: ..\todo.h
 

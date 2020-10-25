@@ -100,6 +100,24 @@
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Game.h">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/GuardianAngel.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/GuardianAngel.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Item.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Item.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/LuckyBoots.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/LuckyBoots.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Monster.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
@@ -116,6 +134,24 @@
 			<Option target="UnluckyAdventure"/>
 		</Unit>
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/RandomNumberGod.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Shield.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Shield.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Shop.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Shop.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Sword.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Sword.h">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/main.cpp">
