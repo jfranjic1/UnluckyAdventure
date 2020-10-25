@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Game.h"
 #include "RandomNumberGod.h"
-
+#include "Shop.h"
 Game::Game(int players, int numberOfFields, int diceSides) {
     this->num_of_players = players;
     this->players = std::vector<Player*>(players);
@@ -47,12 +47,10 @@ void Game::turn() {
         if(!test_alive){
             std::cout<<std::endl<<"All players are dead. GG UNLUCKY"<<std::endl;
             throw 1;
-            return;
         }
         if(test_end){
             std::cout<<"Player "<<j+1<<" has won the game."<<std::endl;
             throw 1;
-            return;
         }
 
         if (!this->players[i]->isAlive())continue;
@@ -62,7 +60,7 @@ void Game::turn() {
         std::cout << std::endl <<"Player " << i + 1 << " turn." << std::endl;
         char temp;
         while (1) {
-            std::cout << R"("R" to roll the dice, "S" to skip the round, "F" to forfeit)" << std::endl;
+            std::cout << R"("R" to roll the dice, "S" to open shop, "F" to forfeit)" << std::endl;
             std::cin >> temp;
             if (temp == 'R' || temp == 'S' || temp == 'F' || temp == 'r' || temp == 's' || temp == 'f') break;
             std::cout << "Unknown character, please try again." << std::endl;
@@ -72,7 +70,7 @@ void Game::turn() {
             this->players[i]->move_relative(result, fields.size());
         }
         if (temp == 'S' || temp == 's') {
-            std::cout << "You have decided to wait for the next round." << std::endl;
+            Shop::displayShop(this->players[i]);
             continue;
         }
         if (temp == 'F' || temp == 'f') {

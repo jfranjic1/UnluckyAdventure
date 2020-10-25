@@ -15,8 +15,8 @@ Shop::Shop() {
     v.push_back(Sword());
 }
 
-Item* Shop::displayShop(Player *p) {
-    std::cout<<"Welcome to the shop. Chose the item that you want to take or press 'X' to exit the shop."<<std::endl;
+void Shop::displayShop(Player *p) {
+    std::cout<<"Welcome to the shop. You have "<<p->getGold()<<" gold. Chose the item that you want to take or press 'X' to exit the shop."<<std::endl;
     std::cout<<"1. Guardian Angel (revives you upon death)"<<std::endl;
     std::cout<<"2. Lucky Boots (move twice more)"<<std::endl;
     std::cout<<"3. Sword (in combat, doubles your chance of victory)"<<std::endl;
@@ -34,41 +34,42 @@ Item* Shop::displayShop(Player *p) {
         } while (monst != '1' && monst != '2' && monst != '3' && monst != '4' && monst != 'X' && monst != 'x');
         if(monst=='1'){
             if(p->getGold()>=GuardianAngel().getPrice())yes=true;
-            else std::cout<<"Not enough gold."<<std::endl;
+            else std::cout<<"Not enough gold. Please try a different item: "<<std::endl;
         }
         if(monst=='2'){
             if(p->getGold()>=LuckyBoots().getPrice())yes=true;
-            else std::cout<<"Not enough gold."<<std::endl;
+            else std::cout<<"Not enough gold. Please try a different item: "<<std::endl;
         }
         if(monst=='3'){
             if(p->getGold()>=Sword().getPrice())yes=true;
-            else std::cout<<"Not enough gold."<<std::endl;
+            else std::cout<<"Not enough gold. Please try a different item: "<<std::endl;
         }
         if(monst=='4'){
             if(p->getGold()>=Shield().getPrice())yes=true;
-            else std::cout<<"Not enough gold."<<std::endl;
+            else std::cout<<"Not enough gold. Please try a different item: "<<std::endl;
         }
         if(monst=='x'||monst=='X'){
             yes=true;
             std::cout<<"Goodbye."<<std::endl;
+            continue;
         }
     }while (!yes);
     if(monst=='1'){
         std::cout<<"Guardian Angel successfully purchased."<<std::endl;
-        return new GuardianAngel();
+        p->addItem(new GuardianAngel());
     }
     if(monst=='2'){
         std::cout<<"Lucky Boots successfully purchased."<<std::endl;
-        return new LuckyBoots();
+        p->addItem( new LuckyBoots());
     }
     if(monst=='3'){
         std::cout<<"Sword successfully purchased."<<std::endl;
-        return new Sword();
+        p->addItem( new Sword());
     }
     if(monst=='4') {
         std::cout<<"Shield successfully purchased."<<std::endl;
-        return new Shield();
+        p->addItem( new Shield());
     }
-    if(monst=='x' || monst=='X')return nullptr;
+    if(monst=='x' || monst=='X')return;
 }
 

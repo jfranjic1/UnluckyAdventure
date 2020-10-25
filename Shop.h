@@ -13,7 +13,7 @@ private:
 public:
     Shop();
 
-    Item* displayShop(Player*);
+    static void  displayShop(Player*);
 
 };
 

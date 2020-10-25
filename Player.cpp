@@ -5,6 +5,7 @@ Player::Player(int num) {
     this->alive = true;
     this->position = 0;
     this->number = num;
+    this->gold=0;
 }
 
 void Player::kill() {
@@ -62,6 +63,16 @@ void Player::giveGold(int a) {
 
 void Player::takeGold(int a) {
     this->gold-=a;
+}
+
+Player::~Player() {
+    for (int i = 0; i < this->items.size(); ++i) {
+        if(this->items[i]!= nullptr)delete items[i];
+    }
+}
+
+void Player::addItem(Item *i) {
+    this->items.push_back(i);
 }
 
 

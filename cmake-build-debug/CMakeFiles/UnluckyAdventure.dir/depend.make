@@ -14,9 +14,15 @@ CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Dice.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Field.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Game.cpp
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Game.h
+CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\GuardianAngel.h
+CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Item.h
+CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\LuckyBoots.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Monster.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Player.h
 CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\RandomNumberGod.h
+CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Shield.h
+CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Shop.h
+CMakeFiles\UnluckyAdventure.dir\Game.cpp.obj: ..\Sword.h
 
 CMakeFiles\UnluckyAdventure.dir\GuardianAngel.cpp.obj: ..\GuardianAngel.cpp
 CMakeFiles\UnluckyAdventure.dir\GuardianAngel.cpp.obj: ..\GuardianAngel.h
@@ -33,14 +39,29 @@ CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\Monster.cpp
 CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\Monster.h
 CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\RandomNumberGod.h
 
+CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Item.h
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.cpp
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.h
 
 CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.obj: ..\RandomNumberGod.cpp
 CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.obj: ..\RandomNumberGod.h
 
+CMakeFiles\UnluckyAdventure.dir\Shield.cpp.obj: ..\Item.h
+CMakeFiles\UnluckyAdventure.dir\Shield.cpp.obj: ..\Shield.cpp
+CMakeFiles\UnluckyAdventure.dir\Shield.cpp.obj: ..\Shield.h
+
+CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\GuardianAngel.h
+CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\Item.h
+CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\LuckyBoots.h
+CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\Player.h
+CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\Shield.h
 CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\Shop.cpp
 CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\Shop.h
+CMakeFiles\UnluckyAdventure.dir\Shop.cpp.obj: ..\Sword.h
+
+CMakeFiles\UnluckyAdventure.dir\Sword.cpp.obj: ..\Item.h
+CMakeFiles\UnluckyAdventure.dir\Sword.cpp.obj: ..\Sword.cpp
+CMakeFiles\UnluckyAdventure.dir\Sword.cpp.obj: ..\Sword.h
 
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Dice.h
 CMakeFiles\UnluckyAdventure.dir\main.cpp.obj: ..\Field.h

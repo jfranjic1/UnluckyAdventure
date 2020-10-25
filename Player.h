@@ -1,6 +1,7 @@
 #ifndef UNLUCKYADVENTURE_PLAYER_H
 #define UNLUCKYADVENTURE_PLAYER_H
-
+#include "Item.h"
+#include "vector"
 
 class Player {
 private:
@@ -9,11 +10,13 @@ private:
     int previous_position = 0;
     int number = 0;
     int gold = 0;
+    std::vector<Item*> items;
 public:
     int getPreviousPosition() const;
 
 public:
     Player(int);
+    ~Player();
     void kill();
     void move_relative(int, int);
     void move_absolute(int, int);
@@ -27,6 +30,8 @@ public:
     void takeGold(int);
 
     int getGold() const;
+
+    void addItem(Item *i);
 
 };
 
