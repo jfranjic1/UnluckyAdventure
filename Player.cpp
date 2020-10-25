@@ -9,7 +9,7 @@ Player::Player(int num) {
     this->alive = true;
     this->position = 0;
     this->number = num;
-    this->gold=100;
+    this->gold=0;
 }
 
 void Player::kill() {

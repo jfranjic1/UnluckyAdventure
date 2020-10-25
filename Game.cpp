@@ -204,7 +204,9 @@ void Game::generateMonsters() {
 void Game::monsterCombat(int i, int j) {
     std::vector<float> run = {70, 50, 30, 20};
     std::vector<float> fight = {50, 25, 15, 7};
-
+    int multiplication=1;
+    if(this->players[j]->hasSword())multiplication+=1;
+    if(this->players[j]->hasShield())multiplication+=0.5;
     int monster_tier = this->fields[i]->getMonster()->getTier();
     std::cout<<"You ran into a Level "<< monster_tier<<" monster."<<std::endl;
     std::cout<<"Do you wish to fight the monster or run away from it ? (R - run, F - Fight)"<<std::endl;
@@ -217,7 +219,7 @@ void Game::monsterCombat(int i, int j) {
     } while (monst != 'R' && monst != 'r' && monst != 'F' && monst != 'f');
 
     if (monst == 'r' || monst == 'R'){
-        RandomNumberGod run_rng(run[monster_tier-1]);
+        RandomNumberGod run_rng(run[monster_tier-1]*multiplication);
         if(!run_rng.roll()){
             std::cout<<"A great tragedy happened while runing away from a Level "<<monster_tier<<" monster."<<std::endl;
             std::cout<<"You have been returned to the start."<<std::endl;
@@ -227,7 +229,7 @@ void Game::monsterCombat(int i, int j) {
             std::cout<<"You have returned to the previous position safely. (field "<<this->players[j]->getPosition()<<")"<<std::endl;
         }
     } else{
-        RandomNumberGod fight_rng(fight[monster_tier-1]);
+        RandomNumberGod fight_rng(fight[monster_tier-1]*multiplication);
         if(!fight_rng.roll()){
             std::cout<<"A great tragedy happened while trying to fight a Level "<<monster_tier<<" monster."<<std::endl;
             RandomNumberGod coin_flip(50);
@@ -258,12 +260,18 @@ int Game::fieldHasPlayer(int position) {
 }
 
 void Game::PvP(int p1, int p2) {
-    RandomNumberGod rng(50);
+    int multiplication1=1, multiplication2=1;
+    if(this->players[p1]->hasShield())multiplication1+=1;
+    if(this->players[p1]->hasSword())multiplication1+=2;
+    if(this->players[p2]->hasShield())multiplication2+=1;
+    if(this->players[p2]->hasSword())multiplication2+=2;
+    double rand=p1/p2*50;
+    RandomNumberGod rng(rand);
     if(rng.roll()){
-        std::cout<<"In a fearsome battle Player "<< p1+1<< " has eliminated Player "<< p2+1 <<" out of the game."<<std::endl;
+        std::cout<<"In a fearsome battle Player "<< p1+1<< " has slain Player "<< p2+1 <<" ."<<std::endl;
         this->players[p2]->kill();
     }else{
-        std::cout<<"In a fearsome battle Player "<< p2+1<< " has eliminated Player "<< p1+1 <<" out of the game."<<std::endl;
+        std::cout<<"In a fearsome battle Player "<< p2+1<< " has slain Player "<< p1+1 <<" ."<<std::endl;
         this->players[p1]->kill();
     }
 }
