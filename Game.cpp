@@ -67,6 +67,10 @@ void Game::turn() {
         }
         if (temp == 'R' || temp == 'r') {
             int result = this->dice.Roll();
+            if(this->players[i]->hasLuckyBoots()){
+                result*=2;
+                std::cout<<"Due to Lucky Boots you have moved "<<result<<" fields."<<std::endl;
+            }
             this->players[i]->move_relative(result, fields.size());
         }
         if (temp == 'S' || temp == 's') {
