@@ -316,6 +316,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+todo.obj: todo.cpp.obj
+
+.PHONY : todo.obj
+
+# target to build an object file
+todo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\todo.cpp.obj
+.PHONY : todo.cpp.obj
+
+todo.i: todo.cpp.i
+
+.PHONY : todo.i
+
+# target to preprocess a source file
+todo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\todo.cpp.i
+.PHONY : todo.cpp.i
+
+todo.s: todo.cpp.s
+
+.PHONY : todo.s
+
+# target to generate assembly for a file
+todo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UnluckyAdventure.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\UnluckyAdventure.dir\todo.cpp.s
+.PHONY : todo.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -346,6 +373,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... todo.obj
+	@echo ... todo.i
+	@echo ... todo.s
 .PHONY : help
 
 

@@ -8,6 +8,7 @@ private:
     int position = 0;
     int previous_position = 0;
     int number = 0;
+    int gold = 0;
 public:
     int getPreviousPosition() const;
 
@@ -20,6 +21,13 @@ public:
     bool isAlive() const;
 
     int getPosition() const;
+
+    void giveGold(int);
+
+    void takeGold(int);
+
+    int getGold() const;
+
 };
 
 

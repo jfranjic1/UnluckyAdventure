@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/Player.cpp" "C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug/CMakeFiles/UnluckyAdventure.dir/Player.cpp.obj"
   "C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/RandomNumberGod.cpp" "C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug/CMakeFiles/UnluckyAdventure.dir/RandomNumberGod.cpp.obj"
   "C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/main.cpp" "C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug/CMakeFiles/UnluckyAdventure.dir/main.cpp.obj"
+  "C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/todo.cpp" "C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/cmake-build-debug/CMakeFiles/UnluckyAdventure.dir/todo.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

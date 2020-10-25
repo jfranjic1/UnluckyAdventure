@@ -52,6 +52,18 @@ int Player::getPreviousPosition() const {
     return previous_position;
 }
 
+int Player::getGold() const {
+    return gold;
+}
+
+void Player::giveGold(int a) {
+    this->gold+=a;
+}
+
+void Player::takeGold(int a) {
+    this->gold-=a;
+}
+
 
 
 

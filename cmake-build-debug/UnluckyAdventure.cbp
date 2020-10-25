@@ -121,6 +121,12 @@
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/main.cpp">
 			<Option target="UnluckyAdventure"/>
 		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/todo.cpp">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
+		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/todo.h">
+			<Option target="UnluckyAdventure"/>
+		</Unit>
 		<Unit filename="C:/Users/DT User6/CLionProjects/UnluckyAdventureMonsters/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

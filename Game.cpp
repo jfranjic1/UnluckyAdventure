@@ -228,7 +228,8 @@ void Game::monsterCombat(int i, int j) {
             }
         }else{
             this->players[j]->move_absolute(this->players[j]->getPreviousPosition(),this->fields.size());
-            std::cout<<"You have slain the a Level "<<monster_tier<<" monster."<<std::endl;
+            this->players[j]->giveGold(monster_tier*monster_tier);
+            std::cout<<"You have slain a Level "<<monster_tier<<" monster and have earned "<<monster_tier*monster_tier<<" gold."<<std::endl;
             this->fields[i]->getMonster()->kill();
             this->fields[i]->NormalField();
         }

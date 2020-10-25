@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/UnluckyAdventure.dir/Player.cpp.obj"
   "CMakeFiles/UnluckyAdventure.dir/RandomNumberGod.cpp.obj"
   "CMakeFiles/UnluckyAdventure.dir/main.cpp.obj"
+  "CMakeFiles/UnluckyAdventure.dir/todo.cpp.obj"
   "UnluckyAdventure.exe"
   "UnluckyAdventure.exe.manifest"
   "UnluckyAdventure.lib"
