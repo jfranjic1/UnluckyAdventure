@@ -1,6 +1,7 @@
 #ifndef UNLUCKYADVENTURE_SHOP_H
 #define UNLUCKYADVENTURE_SHOP_H
 #include "Item.h"
+#include "Player.h"
 #include "GuardianAngel.h"
 #include "Shield.h"
 #include "LuckyBoots.h"
@@ -12,9 +13,8 @@ private:
 public:
     Shop();
 
-    int displayShop();
+    Item* displayShop(Player*);
 
-    Item* getItem(int);
 };
 
 

@@ -1,3 +1,10 @@
+#include "Item.h"
+#include "Player.h"
+#include "GuardianAngel.h"
+#include "Shield.h"
+#include "LuckyBoots.h"
+#include "Sword.h"
+#include "vector"
 #include "Shop.h"
 #include "iostream"
 
@@ -8,7 +15,7 @@ Shop::Shop() {
     v.push_back(Sword());
 }
 
-int Shop::displayShop() {
+Item* Shop::displayShop(Player *p) {
     std::cout<<"Welcome to the shop. Chose the item that you want to take or press 'X' to exit the shop."<<std::endl;
     std::cout<<"1. Guardian Angel (revives you upon death)"<<std::endl;
     std::cout<<"2. Lucky Boots (move twice more)"<<std::endl;
@@ -16,19 +23,52 @@ int Shop::displayShop() {
     std::cout<<"4. Shield (in combat, increases your chance of victory by 50%)"<<std::endl;
 
     char monst;
+    bool yes=false;
     do {
-        std::cin >> monst;
-        if(monst != '1' && monst != '2' && monst != '3' && monst != '4' && monst != 'X' && monst != 'x')std::cout << "Please enter a valid character." << std::endl;
-        std::cin.clear();
-        std::cin.ignore();
-    } while (monst != '1' && monst != '2' && monst != '3' && monst != '4' && monst != 'X' && monst != 'x');
-    if(monst=='1')return 1;
-    if(monst=='2')return 2;
-    if(monst=='3')return 3;
-    if(monst=='4')return 4;
-    if(monst=='x' || monst=='X')return 0;
+        do {
+            std::cin >> monst;
+            if (monst != '1' && monst != '2' && monst != '3' && monst != '4' && monst != 'X' && monst != 'x')
+                std::cout << "Please enter a valid character." << std::endl;
+            std::cin.clear();
+            std::cin.ignore();
+        } while (monst != '1' && monst != '2' && monst != '3' && monst != '4' && monst != 'X' && monst != 'x');
+        if(monst=='1'){
+            if(p->getGold()>=GuardianAngel().getPrice())yes=true;
+            else std::cout<<"Not enough gold."<<std::endl;
+        }
+        if(monst=='2'){
+            if(p->getGold()>=LuckyBoots().getPrice())yes=true;
+            else std::cout<<"Not enough gold."<<std::endl;
+        }
+        if(monst=='3'){
+            if(p->getGold()>=Sword().getPrice())yes=true;
+            else std::cout<<"Not enough gold."<<std::endl;
+        }
+        if(monst=='4'){
+            if(p->getGold()>=Shield().getPrice())yes=true;
+            else std::cout<<"Not enough gold."<<std::endl;
+        }
+        if(monst=='x'||monst=='X'){
+            yes=true;
+            std::cout<<"Goodbye."<<std::endl;
+        }
+    }while (!yes);
+    if(monst=='1'){
+        std::cout<<"Guardian Angel successfully purchased."<<std::endl;
+        return new GuardianAngel();
+    }
+    if(monst=='2'){
+        std::cout<<"Lucky Boots successfully purchased."<<std::endl;
+        return new LuckyBoots();
+    }
+    if(monst=='3'){
+        std::cout<<"Sword successfully purchased."<<std::endl;
+        return new Sword();
+    }
+    if(monst=='4') {
+        std::cout<<"Shield successfully purchased."<<std::endl;
+        return new Shield();
+    }
+    if(monst=='x' || monst=='X')return nullptr;
 }
 
-Item *Shop::getItem(int) {
-    return nullptr;
-}
