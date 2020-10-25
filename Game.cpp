@@ -70,12 +70,22 @@ void Game::turn() {
             this->players[i]->move_relative(result, fields.size());
         }
         if (temp == 'S' || temp == 's') {
+
             Shop::displayShop(this->players[i]);
+           /*
+            if(this->players[i]->hasShield())std::cout<<"SHIEEEEEEELD"<<std::endl;
+            if(this->players[i]->hasLuckyBoots())std::cout<<"BOOOOTS"<<std::endl;
+            if(this->players[i]->hasGuardianAngel()){
+                std::cout<<"ANGEL"<<std::endl;
+                this->players[i]->removeGuardianAngel();
+            }
+            if(this->players[i]->hasSword())std::cout<<"SWORRRRD"<<std::endl;
+            */
             continue;
         }
         if (temp == 'F' || temp == 'f') {
             this->players[i]->kill();
-            std::cout << "You have blown yourself out of existence." << std::endl;
+            if(!this->players[i]->isAlive())std::cout << "You have blown yourself out of existence." << std::endl;
             continue;
         }
     }check=true;

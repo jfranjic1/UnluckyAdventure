@@ -33,6 +33,18 @@ public:
 
     void addItem(Item *i);
 
+    bool hasGuardianAngel();
+
+    void removeGuardianAngel();
+
+    bool hasSword();
+
+    bool hasShield();
+
+    bool hasLuckyBoots();
+
+
+
 };
 
 

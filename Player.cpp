@@ -1,14 +1,24 @@
 #include "Player.h"
 #include <iostream>
+#include "GuardianAngel.h"
+#include "LuckyBoots.h"
+#include "Sword.h"
+#include "Shield.h"
 
 Player::Player(int num) {
     this->alive = true;
     this->position = 0;
     this->number = num;
-    this->gold=0;
+    this->gold=100;
 }
 
 void Player::kill() {
+    if(this->hasGuardianAngel()){
+        this->removeGuardianAngel();
+        std::cout<<"Player "<<this->number<<" has survived a tragedy with the help of a Guardian Angel and has been moved to the start."<<std::endl;
+        this->move_absolute(0,100);
+        return;
+    }
     this->alive = false;
     std::cout<<"A tragedy for Player "<<this->number<<"."<<std::endl;
 }
@@ -75,6 +85,41 @@ void Player::addItem(Item *i) {
     this->items.push_back(i);
 }
 
+bool Player::hasGuardianAngel() {
+    for(int i=0;i< this->items.size();i++){
+        if(dynamic_cast<GuardianAngel*>(this->items[i])!= nullptr){
+            return true;
+        }
+    }
+    return false;
+}
+bool Player::hasLuckyBoots()  {
+    for(int i=0;i< this->items.size();i++){
+        if(dynamic_cast<LuckyBoots*>(this->items[i])!= nullptr)return true;
+    }
+    return false;
+}
+
+bool Player::hasSword() {
+    for (int i = 0; i < this->items.size(); i++) {
+        if (dynamic_cast<Sword *>(this->items[i]) != nullptr)return true;
+    }
+    return false;
+}
+bool Player::hasShield() {
+    for (int i = 0; i < this->items.size(); i++) {
+        if (dynamic_cast<Shield*>(this->items[i]) != nullptr)return true;
+    }
+    return false;
+}
+void Player::removeGuardianAngel() {
+    for(int i=0;i< this->items.size();i++){
+        if(dynamic_cast<GuardianAngel*>(this->items[i])!= nullptr){
+            delete this->items[i];
+            this->items[i]= nullptr;
+        }
+    }
+}
 
 
 

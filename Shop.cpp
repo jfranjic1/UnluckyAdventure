@@ -57,18 +57,22 @@ void Shop::displayShop(Player *p) {
     if(monst=='1'){
         std::cout<<"Guardian Angel successfully purchased."<<std::endl;
         p->addItem(new GuardianAngel());
+        p->takeGold(GuardianAngel().getPrice());
     }
     if(monst=='2'){
         std::cout<<"Lucky Boots successfully purchased."<<std::endl;
         p->addItem( new LuckyBoots());
+        p->takeGold(LuckyBoots().getPrice());
     }
     if(monst=='3'){
         std::cout<<"Sword successfully purchased."<<std::endl;
         p->addItem( new Sword());
+        p->takeGold(Sword().getPrice());
     }
     if(monst=='4') {
         std::cout<<"Shield successfully purchased."<<std::endl;
         p->addItem( new Shield());
+        p->takeGold(Shield().getPrice());
     }
     if(monst=='x' || monst=='X')return;
 }

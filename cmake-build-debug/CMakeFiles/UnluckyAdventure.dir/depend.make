@@ -39,9 +39,13 @@ CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\Monster.cpp
 CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\Monster.h
 CMakeFiles\UnluckyAdventure.dir\Monster.cpp.obj: ..\RandomNumberGod.h
 
+CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\GuardianAngel.h
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Item.h
+CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\LuckyBoots.h
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.cpp
 CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Player.h
+CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Shield.h
+CMakeFiles\UnluckyAdventure.dir\Player.cpp.obj: ..\Sword.h
 
 CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.obj: ..\RandomNumberGod.cpp
 CMakeFiles\UnluckyAdventure.dir\RandomNumberGod.cpp.obj: ..\RandomNumberGod.h
