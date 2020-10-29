@@ -31,7 +31,7 @@ void Player::move_relative(int diff, int max=100) {
     }
     if(this->position + diff > max){
         this->previous_position = this->position;
-        this->position = 100;
+        this->position = max-1;
         return;
     }
     this->previous_position = this->position;
